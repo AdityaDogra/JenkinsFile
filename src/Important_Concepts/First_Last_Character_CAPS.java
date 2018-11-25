@@ -14,10 +14,9 @@ public class First_Last_Character_CAPS {
 			String firstcap=Character.toUpperCase(a.charAt(0))+a.substring(1);
 			String firstlastcap=firstcap.substring(0, firstcap.length()-1)+Character.toUpperCase(firstcap.charAt(b-1));
 			output= output.concat(firstlastcap+" ");
-		}//System.out.println(output);
-		System.out.println("The output is: "+input.replaceAll(input, output));
-
-
+		}
+		input=input.replaceAll(input, output).trim();
+		System.out.println("The output is: "+input);
 	}
 
 }
